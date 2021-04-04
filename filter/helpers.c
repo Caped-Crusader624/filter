@@ -39,15 +39,12 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 void edges(int height, int width, RGBTRIPLE image[height][width])
 
 {
-    grayscale(height,width,image)
-    //loop through pixels
+    grayscale(height,width,image);
             int gx;
             int gy;
             int g[(height-2)*(width-2)];
-           // int i,j;
             int index = 0;
 
-            //form 3x3 grid
             for( i = 2;i < (height); i++)
             {
                 for(j = 2; j < width; j++)
